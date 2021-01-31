@@ -10,21 +10,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <div class="nav">
                 <div class="nav__logo">
                     <a href="#"><img src="img/logo.png" alt="logo" class="nav__logo"></a>                   
                 </div>
-                <div class="nav__menu">
-                    <a href="#">home</a>
-                    <a href="#">about</a>
-                    <a href="#">expertise</a>
-                    <a href="#">teams</a>
-                    <a href="#">works</a>
-                    <a href="#">people say</a>
-                    <a href="#">contact</a>
-                </div>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#up">home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#story">about</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#expertise">expertise</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#team">teams</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">works</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">people say</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">contact</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <h1 class="promo__title">We Are Awesome Creative Agency</h1>
             <hr>
@@ -32,7 +51,7 @@
             <button class="button button-promo">learn more</button>
         </div>
     </section> 
-    <section class="story">
+    <section id="story" class="story">
         <div class="container">
             <div class="story__wrapper">
                 <img src="img/logo-main.png" alt="logo-main" class="story__logo">
@@ -57,7 +76,7 @@
             </div>
         </div>
     </section>
-    <section class="expertise">
+    <section id="expertise" class="expertise">
         <div class="container">
             <h2 class="expertise__title">expertise</h2>
             <div class="expertise__subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
@@ -96,7 +115,7 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section id="team" class="team">
         <div class="container">
             <h2 class="team__title">MEET OUR AMAZING TEAM</h2>
             <div class="team__subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
@@ -131,5 +150,11 @@
             <button class="button button-team">WE ARE HIRING</button>
         </div>
     </section>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="pageup">
+    </a>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

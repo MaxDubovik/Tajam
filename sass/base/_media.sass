@@ -5,8 +5,7 @@
 			display: block
 			margin: 0 auto
 		&__menu
-			line-height: 30px
-			text-align: center
+			margin-top: 15px
 	.story            
 		&__wrapper
 			flex-direction: column    
@@ -25,5 +24,47 @@
 			margin: 0 auto
 			margin-bottom: 70px
 @media (max-width: 425px)
+	.nav
+		&__menu
+			position: fixed
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin: 0
+			top: 0
+			left: -100%
+			width: 50%
+			height: 100vh
+			padding: 20px 15px
+			background-color: rgba(0,0,0, .80)	
+			transition: 0.5s all	
+			line-height: 112px
+			&_active
+				left: 0
+	.hamburger
+		display: block
+		position: absolute
+		right: 33px
+		top: 40px
+		transform: translateY(-50%)
+		width: 30px
+		span
+			display: block
+			height: 2px
+			width: 100%
+			background-color: #fff
+			margin-bottom: 5px
+			transition: 0.5s all
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: rotate(45deg)
+					
+				
 	.promo__title
 		margin-top: 100px
